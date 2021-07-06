@@ -1,0 +1,43 @@
+﻿@model IEnumerable<ClinicManagementProject.Models.Patient>
+
+@{Layout = "~/views/shared/_Layout.cshtml";}
+
+<body>
+
+
+
+
+
+    <table class="table table-sm">
+        <thead>
+            <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Patient Name</th>
+                <th scope="col">Consultation Status</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <p>@Html.ActionLink("Search a Patient", "PatSearchAll")</p>
+                </td>
+
+                <td>
+                    <p>@Html.ActionLink("Patient Payment", "PatPayment")</p>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <section>
+        @*@Html.ActionLink("Book Appointment", "BookAppointment", new { str = Model.Username })*@
+
+        <p>@Html.ActionLink("Register New Patient", "PatRegNew")</p>
+
+
+
+    </section>
+</body>
+
+</html> 
